@@ -1,4 +1,5 @@
-import { Box, Button } from "@material-ui/core";
+import { Box, Button, Toolbar } from "@material-ui/core";
+import { Header } from "./Header";
 
 // ! What did I undestand about
 
@@ -17,6 +18,12 @@ import { Box, Button } from "@material-ui/core";
 
 export const BoxStudy = () => {
   return (
+    <>
+    <Header>
+      <Toolbar>
+        
+      </Toolbar>
+    </Header>
     <Box>
       {/* Simple example of Box as Wrapper */}
       <Box>
@@ -35,6 +42,7 @@ export const BoxStudy = () => {
         <Button variant="primary">Hello World Box</Button>
       </Box>
     </Box>
+    </>
   );
 };
 
